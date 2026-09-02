@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunny Garden Market</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>☀️ Sunny Garden Market</h1>
+    <p>Reg No: 24RP10270</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#farmers">Farmers</a>
+    <a href="#products">Products</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#contact">Order</a>
+</nav>
+
+<section id="home">
+    <h2>Fresh Food From Local Farmers</h2>
+    <p>Buy fresh vegetables, fruits and dairy products directly from farmers.</p>
+
+    <div class="slideshow">
+        <img id="slide" src="image/images.jfif">
+    </div>
+</section>
+
+<section id="farmers">
+    <h2>Our Farmers</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Green Farm</h3>
+            <img id="slide" src="image/green image1.jfif">
+            <p>Fresh vegetables from Bugesera.</p>
+             
+        </div>
+
+        <div class="card">
+            <h3>Happy Fruits Farm</h3>
+            <p>Fresh fruits from Rwamagana.</p>
+             <img id="slide" src="image/vege image 2.jfif">
+        </div>
+
+        <div class="card">
+            <h3>Fresh Milk Cooperative</h3>
+            <p>Quality dairy products from Nyagatare.</p>
+            <img id="slide" src="image/image milk 2.jpg">
+        </div>
+    </div>
+</section>
+
+<section id="products">
+    <h2>Our Products</h2>
+
+    <div class="filter">
+        <button onclick="filterProducts('all')">All</button>
+        <button onclick="filterProducts('vegetable')">Vegetables</button>
+        <button onclick="filterProducts('fruit')">Fruits</button>
+        <button onclick="filterProducts('dairy')">Dairy</button>
+    </div>
+
+    <div class="cards">
+
+        <div class="card product vegetable">
+
+            <h3>Tomatoes</h3>
+            <p>1,500 RWF / Kg</p>
+            <button>Order</button>
+        </div>
+
+        <div class="card product vegetable">
+            <h3>Carrots</h3>
+            <p>1,200 RWF / Kg</p>
+            <button>Order</button>
+        </div>
+
+        <div class="card product fruit">
+            <h3>Bananas</h3>
+            <p>1,000 RWF / Kg</p>
+            <button>Order</button>
+        </div>
+
+        <div class="card product fruit">
+            <h3>Oranges</h3>
+            <p>2,000 RWF / Kg</p>
+            <button>Order</button>
+        </div>
+
+        <div class="card product dairy">
+            <h3>Fresh Milk</h3>
+            <p>800 RWF / Litre</p>
+            <button>Order</button>
+        </div>
+
+    </div>
+</section>
+
+<section id="reviews">
+    <h2>Customer Reviews</h2>
+
+    <div class="cards">
+        <div class="card">
+            <p>"The vegetables were very fresh!"</p>
+            <strong>- Alice</strong>
+        </div>
+
+        <div class="card">
+            <p>"Good products and affordable prices."</p>
+            <strong>- Eric</strong>
+        </div>
+    </div>
+</section>
+
+<section id="map">
+    <h2>Farm Locations</h2>
+
+    <div class="map">
+        📍 Bugesera<br>
+        📍 Rwamagana<br>
+        📍 Nyagatare
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Order Request</h2>
+
+    <form id="orderForm">
+        <input type="text" id="name" placeholder="Your Name">
+
+        <input type="email" id="email" placeholder="Email">
+
+        <input type="text" id="phone" placeholder="Phone Number">
+
+        <select id="product">
+            <option value="">Choose Product</option>
+            <option>Tomatoes <img src="" alt=""> </option>
+
+            <option>Carrots</option>
+            <option>Bananas</option>
+            <option>Oranges</option>
+            <option>Milk</option>
+        </select>
+
+        <button type="submit">Send Order</button>
+
+        <p id="message"></p>
+    </form>
+</section>
+
+<footer>
+    <p>Sunny Garden Market | Reg No: 24RP10270</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
